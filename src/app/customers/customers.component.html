@@ -1,0 +1,48 @@
+
+    <mat-card class="register-card">
+    
+        <mat-toolbar>Teacher</mat-toolbar>
+    
+        <!-- CONTENT HERE -->
+        <mat-card-content>
+    
+            <form class="my-form">
+    
+                <mat-form-field class="full-width">
+                    <mat-label>Teacher Name</mat-label>
+                    <input matInput placeholder="Email" name="email">
+                </mat-form-field>
+
+                
+    
+                <mat-form-field class="full-width">
+                    <mat-label>Teacher Phone No</mat-label>
+                    <input matInput placeholder="Password" name="password">
+                </mat-form-field>
+    
+                <mat-form-field class="full-width">
+                    <mat-label>Father Phone No</mat-label>
+                    <input matInput placeholder="Password" name="password">
+                </mat-form-field>
+    
+                <mat-form-field class="full-width">
+                    <mat-label> Gmail</mat-label>
+                    <input matInput placeholder="Password" name="password">
+                </mat-form-field>
+    
+                <mat-form-field class="full-width">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Password" name="password">
+                </mat-form-field>
+    
+            </form>
+           
+        </mat-card-content>
+    
+        <mat-card-actions class="toolbar">
+            <!-- REGISTER BUTTON -->
+            <button mat-raised-button (click)="login()" color="primary" routerLink="/">Done</button>
+            
+        </mat-card-actions>
+    
+    </mat-card>

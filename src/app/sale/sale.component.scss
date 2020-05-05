@@ -1,0 +1,53 @@
+
+%grid-card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding:20px;
+}
+%flex-father-centre {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.card-layout{
+  
+  @extend %grid-card-layout;
+  
+  // margin: 0 auto;
+  
+  .sale-card{
+    height: 250px;
+    padding:0;
+    background-color: pink;
+    mat-toolbar {
+      justify-content: center;
+    }
+    ::ng-deep {
+      .mat-card-header-text{
+        margin:0;
+      }
+    }
+    
+    .sale-card-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 80px 40px;
+      grid-row-gap: 10px;
+      height: calc( 100% - 64px );
+      .item-right {
+        grid-area: 2/2;
+        @extend %flex-father-centre;
+        cursor: pointer;
+      }
+      .item-left{
+        grid-area: 2/1;
+        @extend %flex-father-centre;
+        cursor:pointer ;
+
+      }
+    }
+  }
+  
+}

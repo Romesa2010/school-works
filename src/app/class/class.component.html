@@ -1,0 +1,62 @@
+<mat-card class="register-card">
+    
+    <mat-toolbar class="icon">
+        <div class="ico">
+        Student
+    </div>
+  <div mat-card-avatar class="example-header-image"> </div>   
+ </mat-toolbar>
+    
+
+    <!-- CONTENT HERE -->
+    <mat-card-content>
+
+        <form class="my-form">
+
+            <mat-form-field class="full-width">
+                <mat-label>Student Name</mat-label>
+                <input matInput  name="Student name">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Student Class</mat-label>
+                <input matInput  name="Student class">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Sugestions</mat-label>
+                <input matInput  name="sugestions">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Father's Name</mat-label>
+                <input matInput  name="father name">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Father's Phone No</mat-label>
+                <input matInput  name="father phone no">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Father's Email</mat-label>
+                <input matInput  name="father gmail">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Address</mat-label>
+                <input matInput  name="address">
+            </mat-form-field>
+
+            
+        </form>
+       
+    </mat-card-content>
+
+    <mat-card-actions class="toolbar">
+        <!-- REGISTER BUTTON -->
+        <button mat-raised-button (click)="login()" color="primary" routerLink="/school">Done</button>
+        
+    </mat-card-actions>
+
+</mat-card>

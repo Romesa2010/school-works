@@ -1,0 +1,129 @@
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="push">
+
+        <mat-card class="example-card">
+
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+
+                <mat-card-title>Flowers</mat-card-title>
+
+                <mat-card-subtitle>love Flowers</mat-card-subtitle>
+
+            </mat-card-header>
+
+            <img width="300" mat-card-image src="../assets/images/flower.jpeg" alt="Photo of a Shiba Inu">
+            
+
+            <mat-card-actions>
+
+            <span> 
+
+            <button (click)="setLike()" mat-icon-button color="accent"
+                        aria-label="Example icon button with a home icon">
+                        <mat-icon>thumb_up </mat-icon>
+            </button>
+                    {{like}}
+
+            </span>
+
+            <span> 
+
+            <button (click)="setDislike()" mat-icon-button color="accent"
+                        aria-label="Example icon button with a home icon">
+                        <mat-icon>thumb_down</mat-icon>
+             </button>
+                    {{dislike}}
+            </span>
+
+            </mat-card-actions>
+
+        </mat-card>
+
+        <a mat-list-item routerLink="customers">
+            <mat-icon>people</mat-icon>
+            <span class="customer-list">Teacher</span>
+        </a>
+
+        <a class="no-decoratoin" mat-list-item routerLink="school">
+            <mat-icon>school</mat-icon>
+            <span class="school-list">School</span>
+        </a>
+
+        <a class="no-decoratoin" mat-list-item routerLink="class">
+            <mat-icon>face</mat-icon>
+            <span class="school-list">student</span>
+        </a>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <mat-toolbar color="primary">
+            
+        <button mat-button color="" (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+        </button>
+
+
+                 <span class="mid-tools">
+         <span> 
+            <button mat-icon-button color="accent" routerLink="/" rou
+                        aria-label="Example icon button with a home icon">
+                        <mat-icon>home</mat-icon>
+            </button>
+        </span>
+
+        <span>
+            <button mat-icon-button color="accent" routerLink="/customers" rou
+                        aria-label="Example icon button with a home icon">
+                        <mat-icon>people</mat-icon>
+            </button>
+        </span>
+
+        <span>
+            <button mat-icon-button color="accent" routerLink="/orders" rou
+                        aria-label="Example icon button with a home icon">
+                        <mat-icon>emoji_people</mat-icon>
+            </button>
+        </span>
+
+        <span> 
+            <button mat-icon-button color="accent" routerLink="/school" rou
+                        aria-label="Example icon button with a home icon">
+                    5   <mat-icon>school</mat-icon>
+            </button>
+        </span>
+
+        <span>
+            <button mat-icon-button color="accent" routerLink="/class" rou
+                    aria-label="Example icon button with a home icon">
+                    <mat-icon>face</mat-icon>
+            </button>
+        </span>
+
+        <span>
+            <button mat-icon-button color="accent" routerLink="/sale" rou
+                    aria-label="Example icon button with a home icon">
+                    <mat-icon>books</mat-icon>
+            </button>
+        </span>
+
+
+            </span>
+
+            <span class="right-toolbar">
+                <button mat-raised-button color="warn" routerLink="/auth/login">LOGIN</button>
+                <button mat-raised-button color="warn" routerLink="/auth/register">REGISTER</button>
+            </span>
+
+        </mat-toolbar>
+
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

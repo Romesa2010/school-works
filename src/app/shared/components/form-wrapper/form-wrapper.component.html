@@ -1,0 +1,23 @@
+<!-- https://stackoverflow.com/questions/52638718/multiple-ng-content -->
+<mat-card class="form-card">
+    <mat-toolbar>
+        <span>{{title}}</span>
+        <span>
+        </span>
+    </mat-toolbar>
+
+    <!-- CONTENT HERE -->
+   
+    <mat-card-content>
+        
+        <!-- <ng-container *ngTemplateOutlet=""></ng-container> -->
+    </mat-card-content>
+
+    <mat-card-actions>
+        <!-- REGISTER BUTTON -->
+        <ng-content select="[slot=body]"></ng-content>
+        <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+        <button mat-raised-button (click)="cancel()" color="warn">CANCEL</button>
+    </mat-card-actions>
+</mat-card>
+

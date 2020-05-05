@@ -1,0 +1,81 @@
+.mid-tools{
+    flex:1 1 auto;
+    span{
+        padding: 0 1rem;
+    }
+}
+.app-title{
+    flex: 0 0 10%;
+    text-align: center;
+}
+.right-toolbar{
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 190px;
+    max-width: 190px;
+}
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+  }
+  .simple{
+    transform: translate(5px, 3px);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .example-radio-group {
+    display: block;
+    border: 1px solid #555;
+    margin: 20px;
+    padding: 10px;
+  }
+  .example-card {
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('../assets/images/flowers2.jpeg');
+    background-size: cover;
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .customer-list{
+    transform: translate(10px, 5px);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+  }
+  .school-list{
+    transform: translate(10px, 5px);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+  }
+  .no-decoratoin{
+    text-decoration: none;
+  }
+  ::ng-deep{
+  $background:rgb(0, 20, 34);
+  .mat-list-item-content{
+      height: 40px;
+      background-color: rgb(236, 130, 130);
+      margin-top:5px;
+      border-radius: 5px;
+      &:hover {
+        background-color: lighten($background, 60%);
+      }
+  
+    }
+  }
+ 
